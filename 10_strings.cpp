@@ -50,6 +50,25 @@ void string_at() {
     cout << myString << endl;
 }
 
+void string_special() {
+    // \' = ', \" = ", \\ = \, \n = newline, \t = tab
+
+}
+
+void string_user() {
+    string firstName;
+    cout << "Type your first name" << endl;
+    cin >> firstName;
+    cout << "Your name is " << firstName << endl;
+}
+
+void string_getline() {
+    string fullName;
+    cout << "Type your full name" << endl;
+    getline (cin, fullName);
+    cout << "Your full name is " << fullName << endl;
+}
+
 
 int main() {
     // string_1();
@@ -58,5 +77,7 @@ int main() {
     // string_length();
     // string_access();
     string_at();
+    //string_user();
+    string_getline();
     return 0;
 }
